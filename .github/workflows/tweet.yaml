@@ -1,0 +1,13 @@
+name: Tweet
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 17 * * *"
+
+jobs:
+  activate_deactivate:
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Test
+        run: node --v
