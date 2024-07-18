@@ -1,0 +1,24 @@
+{
+  "name": "germany-is-fucked",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaseke/germany-is-fucked.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomaseke/germany-is-fucked/issues"
+  },
+  "homepage": "https://github.com/tomaseke/germany-is-fucked#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "twitter-api-v2": "^1.17.2"
+  }
+}
