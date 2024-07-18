@@ -16,14 +16,9 @@ jobs:
           echo "ACCESS=${{ vars.ACCESS }}" >> $GITHUB_ENV
           echo "ACCESS_SECRET=${{ vars.ACCESS_SECRET }}" >> $GITHUB_ENV
       - name: Install deps
-        run: npm i twitter-api-v2
+        # run: npm i twitter-api-v2
       - name: Tweet
         run: |
-          ls
-          cd ..
-          ls
-          cd ..
-          ls
-          cd ..
+          cd ./germany-is-fucked
           ls
           # node index.js
