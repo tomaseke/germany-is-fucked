@@ -9,6 +9,7 @@ jobs:
   activate_deactivate:
     runs-on: "ubuntu-latest"
     steps:
+      - uses: actions/checkout@v3
       - name: Set vars
         run: |
           echo "API_KEY=${{ vars.API_KEY }}" >> $GITHUB_ENV
@@ -16,16 +17,17 @@ jobs:
           echo "ACCESS=${{ vars.ACCESS }}" >> $GITHUB_ENV
           echo "ACCESS_SECRET=${{ vars.ACCESS_SECRET }}" >> $GITHUB_ENV
       - run: npm i twitter-api-v2
-      - run: |
-          cd ..
-          ls
-          echo 1
-          cd ..
-          ls
-          echo 1
-          cd ..
-          ls
-          echo 1
-          cd ..
-          ls
-          echo 1
+      - run: node index.js
+      # - run: |
+      #     cd ..
+      #     ls
+      #     echo 1
+      #     cd ..
+      #     ls
+      #     echo 1
+      #     cd ..
+      #     ls
+      #     echo 1
+      #     cd ..
+      #     ls
+      #     echo 1
