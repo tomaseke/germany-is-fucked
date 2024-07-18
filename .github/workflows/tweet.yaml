@@ -9,5 +9,11 @@ jobs:
   activate_deactivate:
     runs-on: "ubuntu-latest"
     steps:
-      - name: Test
-        run: node --v
+      - name: Set vars
+        run: |
+          echo "API_KEY=${{ vars.API_KEY }}" >> $GITHUB_ENV
+          echo "API_KEY_SECRET=${{ vars.API_KEY_SECRET }}" >> $GITHUB_ENV
+          echo "ACCESS=${{ vars.ACCESS }}" >> $GITHUB_ENV
+          echo "ACCESS_SECRET=${{ vars.ACCESS_SECRET }}" >> $GITHUB_ENV
+      - name: Tweet
+        run: node ../../index.js
