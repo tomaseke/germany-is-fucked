@@ -10,24 +10,10 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v3
-      - name: Set vars
-        run: |
-          echo "API_KEY=${{ vars.API_KEY }}" >> $GITHUB_ENV
-          echo "API_KEY_SECRET=${{ vars.API_KEY_SECRET }}" >> $GITHUB_ENV
-          echo "ACCESS=${{ vars.ACCESS }}" >> $GITHUB_ENV
-          echo "ACCESS_SECRET=${{ vars.ACCESS_SECRET }}" >> $GITHUB_ENV
+      - run: |
+          echo "API_KEY=${{ secrets.API_KEY }}" >> $GITHUB_ENV
+          echo "API_KEY_SECRET=${{ secrets.API_KEY_SECRET }}" >> $GITHUB_ENV
+          echo "ACCESS=${{ secrets.ACCESS }}" >> $GITHUB_ENV
+          echo "ACCESS_SECRET=${{ secrets.ACCESS_SECRET }}" >> $GITHUB_ENV
       - run: npm i twitter-api-v2
       - run: node index.js
-      # - run: |
-      #     cd ..
-      #     ls
-      #     echo 1
-      #     cd ..
-      #     ls
-      #     echo 1
-      #     cd ..
-      #     ls
-      #     echo 1
-      #     cd ..
-      #     ls
-      #     echo 1
