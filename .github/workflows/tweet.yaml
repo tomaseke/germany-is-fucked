@@ -19,15 +19,13 @@ jobs:
       - run: |
           cd ..
           ls
-      - run: |
+          echo 1
           cd ..
           ls
-      - run: |
+          echo 1
           cd ..
           ls
-      - run: |
+          echo 1
           cd ..
           ls
-      - run: |
-          cd ..
-          ls
+          echo 1
