@@ -18,4 +18,4 @@ jobs:
       - name: Install deps
         run: npm i twitter-api-v2
       - name: Tweet
-        run: node ../../index.js
+        run: node index.js
