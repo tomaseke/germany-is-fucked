@@ -3,10 +3,10 @@ name: Tweet
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 17 * * *"
+    - cron: "0 0 * * *"
 
 jobs:
-  activate_deactivate:
+  tweet:
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v3
