@@ -19,4 +19,15 @@ jobs:
       - run: |
           cd ..
           ls
-          node index.js
+      - run: |
+          cd ..
+          ls
+      - run: |
+          cd ..
+          ls
+      - run: |
+          cd ..
+          ls
+      - run: |
+          cd ..
+          ls
