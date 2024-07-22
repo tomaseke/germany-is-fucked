@@ -15,5 +15,5 @@ const change = (total - 3000000000) / total * 100;
 
 const tweet = `Germany's bitcoin value if they didn't jeet 
 in dollars: ${new Intl.NumberFormat('en-US').format(total)}$
-in percentages: ${change > 0 ? '+' : ''}${change.toPrecision(1)}%`;
+in percentages: ${change > 0 ? '+' : ''}${Math.round(change)}%`;
 await twitterClient.v2.tweet(tweet);
